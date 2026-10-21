@@ -1,0 +1,1179 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoescola Atual | Habilitação em Porto Velho - CNH Categoria B, D e ACC</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Autoescola Atual em Porto Velho - Obtenha sua CNH com segurança. Instrutores qualificados, avaliação 4.6★ com 259+ clientes satisfeitos. Categorias B, D e ACC.">
+    <meta name="keywords" content="autoescola Porto Velho, CNH Porto Velho, habilitação, aula de direção, categoria B, categoria D, ACC">
+    <meta name="author" content="Autoescola Atual">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Autoescola Atual | Habilitação em Porto Velho">
+    <meta property="og:description" content="Obtenha sua CNH com os melhores instrutores de Porto Velho. Avaliação 4.6★">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+        
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary: #1a5f7a;
+            --primary-light: #2d8ba8;
+            --accent: #ff6b35;
+            --accent-light: #ff8c5a;
+            --success: #2ecc71;
+            --text-dark: #1a1a1a;
+            --text-gray: #666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 8px 24px rgba(0,0,0,0.12);
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* HEADER */
+        header {
+            background: var(--white);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            font-size: 28px;
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            border: 2px solid #25d366;
+        }
+
+        .btn-whatsapp:hover {
+            background: transparent;
+            color: #25d366;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 16px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .hero-badge i {
+            color: #ffc107;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--accent);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+            border-color: white;
+        }
+
+        /* RATING BANNER */
+        .rating-banner {
+            position: absolute;
+            top: 100px;
+            right: 60px;
+            background: white;
+            padding: 20px 28px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .stars {
+            font-size: 16px;
+            color: #ffc107;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .rating-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .rating-text {
+            font-size: 12px;
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+
+        /* SOBRE */
+        .about {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            line-height: 1.85;
+        }
+
+        .about-image {
+            position: relative;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: var(--primary);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 12px;
+        }
+
+        .feature-item i {
+            font-size: 24px;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .feature-item h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .feature-item p {
+            font-size: 13px;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        /* CATEGORIAS */
+        .categories {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .category-card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+            border-top: 4px solid transparent;
+        }
+
+        .category-card:hover {
+            border-top-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .category-icon {
+            font-size: 52px;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .category-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        .category-card p {
+            font-size: 14px;
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: var(--bg-light);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* INSTRUTORES */
+        .instructors {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .instructor-card {
+            background: var(--bg-light);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .instructor-card:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-4px);
+        }
+
+        .instructor-image {
+            height: 280px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        .instructor-info {
+            padding: 24px;
+        }
+
+        .instructor-info h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .instructor-specialty {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .instructor-rating {
+            font-size: 12px;
+            color: #ffc107;
+        }
+
+        /* DEPOIMENTOS */
+        .testimonials {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: var(--shadow);
+        }
+
+        .stars-testimonial {
+            color: #ffc107;
+            font-size: 14px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .testimonial-text {
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-bottom: 16px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 14px;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-light);
+            margin-bottom: 16px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-header {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary);
+            transition: all 0.3s;
+            user-select: none;
+        }
+
+        .faq-header:hover {
+            background: white;
+        }
+
+        .faq-icon {
+            color: var(--accent);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 400px;
+        }
+
+        .faq-text {
+            padding: 0 20px 20px;
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        /* CONTATO */
+        .contact {
+            padding: 100px 0;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item i {
+            font-size: 40px;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .contact-item strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-item p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-contact {
+            background: var(--accent);
+            padding: 14px 36px;
+        }
+
+        .btn-contact:hover {
+            background: transparent;
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a3a4a;
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-btn-fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 64px;
+            height: 64px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            z-index: 999;
+            border: 3px solid white;
+        }
+
+        .whatsapp-btn-fixed:hover {
+            transform: scale(1.1);
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .rating-banner {
+                top: 20px;
+                right: 20px;
+            }
+
+            .about-content,
+            .categories-grid,
+            .instructors-grid,
+            .testimonials-grid,
+            .contact-grid,
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .whatsapp-btn-fixed {
+                width: 56px;
+                height: 56px;
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <i class="fas fa-car"></i>
+                    Autoescola Atual
+                </a>
+
+                <nav>
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#categorias">Categorias</a>
+                    <a href="#instrutores">Instrutores</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#faq">Dúvidas</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+
+                <div class="header-contact">
+                    <a href="https://wa.me/5569993427318" class="btn-whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="rating-banner">
+            <div class="stars">★★★★★</div>
+            <div class="rating-number">4,6</div>
+            <div class="rating-text">259 avaliações</div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-check-circle"></i>
+                    Acolhimento Inclusivo LGBTQ+
+                </div>
+                <h1>Sua Habilitação com Qualidade e Segurança</h1>
+                <p>Instrutores qualificados, ensino de alta qualidade e aprovação na primeira tentativa. Categorias B, D e ACC em Porto Velho.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5569993427318?text=Olá! Gostaria de mais informações sobre os cursos." class="btn" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Solicitar Informações
+                    </a>
+                    <a href="#categorias" class="btn btn-secondary">Conhecer Categorias</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre a Autoescola Atual</h2>
+            <p class="section-subtitle">Experiência, profissionalismo e dedicação no ensino de direção</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A Autoescola Atual é referência em Porto Velho com avaliação 4,6★ de 259 alunos satisfeitos. Nossa missão é oferecer ensino de qualidade, com instrutores pacientes, atentos e comprometidos com a segurança no trânsito.</p>
+                    
+                    <p>Cada aluno recebe atenção personalizada, desde as aulas teóricas até as práticas de direção. Nossos instrutores, como Roger e Jandir, são reconhecidos por sua paciência, profissionalismo e dedicação em transformar aprendizes em motoristas confiantes.</p>
+
+                    <p>Somos uma empresa que valoriza a inclusão, acolhendo a comunidade LGBTQ+ e sendo liderada por empreendedoras. Nosso compromisso é com a excelência no ensino de direção.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Instrutores Qualificados</h4>
+                                <p>Profissionais experientes e pacientes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <div>
+                                <h4>Alta Taxa de Aprovação</h4>
+                                <p>Alunos aprovados na primeira</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Acolhimento Inclusivo</h4>
+                                <p>Comunidade LGBTQ+ bem-vinda</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horários Flexíveis</h4>
+                                <p>Agende conforme sua disponibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-car"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2 class="section-title">Nossas Categorias</h2>
+            <p class="section-subtitle">Oferecemos cursos para todas as categorias de habilitação</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Categoria B</h3>
+                    <p>Para carros de passeio. Curso completo com aulas teóricas e práticas de direção defensiva.</p>
+                    <span class="category-badge">Mais Popular</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Categoria D</h3>
+                    <p>Para ônibus e transporte de passageiros. Treinamento especializado para segurança.</p>
+                    <span class="category-badge">Profissional</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ACC</h3>
+                    <p>Curso de Atualização de Conhecimentos obrigatório. Mantenha-se atualizado com as normas.</p>
+                    <span class="category-badge">Obrigatório</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTRUTORES -->
+    <section id="instrutores" class="instructors">
+        <div class="container">
+            <h2 class="section-title">Nossos Instrutores</h2>
+            <p class="section-subtitle">Profissionais qualificados e dedicados ao seu aprendizado</p>
+            
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Roger</h4>
+                        <div class="instructor-specialty">Instrutor de Carro - Categoria B</div>
+                        <div class="instructor-rating">★★★★★ Altamente recomendado</div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Jandir</h4>
+                        <div class="instructor-specialty">Instrutor de Carro - Categoria B e D</div>
+                        <div class="instructor-rating">★★★★★ Muito paciente</div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Rogério</h4>
+                        <div class="instructor-specialty">Instrutor de Carro - Categoria B</div>
+                        <div class="instructor-rating">★★★★★ Profissional dedicado</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Alunos Dizem</h2>
+            <p class="section-subtitle">Histórias de sucesso de quem conquistou sua CNH conosco</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars-testimonial">★★★★★</div>
+                    <p class="testimonial-text">"Passei de primeira na categoria B com muita tranquilidade! O instrutor Rogério foi muito paciente e me ensinou a dirigir com confiança e atenção nos pequenos detalhes."</p>
+                    <p class="testimonial-author">Bianca Diniz</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars-testimonial">★★★★★</div>
+                    <p class="testimonial-text">"Os melhores professores, educado, atencioso com seus alunos, e sempre calmo na hora de explicar. Tirei minha CNH aqui com paciência e dedicação."</p>
+                    <p class="testimonial-author">André Araújo</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars-testimonial">★★★★★</div>
+                    <p class="testimonial-text">"Equipe profissional, instrutores qualificados e um ensino de alta qualidade. Recomendo muito a Autoescola Atual para todos que querem qualidade!"</p>
+                    <p class="testimonial-author">Bruno Caldeira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Dúvidas Frequentes</h2>
+            <p class="section-subtitle">Esclareça suas dúvidas sobre os cursos</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Quanto tempo leva o curso de categoria B?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-text">O curso de categoria B normalmente leva entre 4 a 6 semanas, dependendo da disponibilidade de aulas e da aprovação na prova teórica e prática.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Qual é a idade mínima para fazer o curso?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-text">Para categoria B, a idade mínima é 18 anos. Para categoria D, é 25 anos. É necessário apresentar RG, CPF e comprovante de residência.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Como funciona o agendamento de aulas práticas?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-text">Você agenda as aulas conforme sua disponibilidade. Oferecemos turnos matutino, vespertino e noturno. Basta entrar em contato conosco via WhatsApp.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Qual é a taxa de aprovação?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-text">Muitos dos nossos alunos são aprovados na primeira tentativa. Nossa metodologia e instrutores qualificados garantem um aprendizado eficaz e seguro.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Vocês trabalham com acolhimento inclusivo?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-text">Sim! Somos uma empresa que acolhe a comunidade LGBTQ+ com respeito e dignidade. Todos são bem-vindos na Autoescola Atual.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Quais são as formas de pagamento?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-text">Aceitamos diversas formas de pagamento: dinheiro, cartão de crédito, débito e PIX. Consulte-nos sobre possibilidades de parcelamento.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <strong>Localização</strong>
+                    <p>Av. Amazonas, 3926<br>Agenor M. de Carvalho<br>Porto Velho - RO</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <strong>Telefone</strong>
+                    <p>(69) 99342-7318<br>WhatsApp Disponível<br>Seg-Sex: 08h-19h</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <strong>Horário</strong>
+                    <p>Segunda-Sexta: 08h-19h<br>Sábado: 08h-12h<br>Domingo: Fechado</p>
+                </div>
+            </div>
+
+            <div class="contact-buttons">
+                <a href="https://wa.me/5569993427318?text=Olá! Gostaria de agendar uma aula ou obter mais informações." class="btn btn-contact" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Agendar Aula
+                </a>
+                <a href="https://www.google.com/maps/place/Av.+Amazonas,+3926,+Agenor+M.+de+Carvalho,+Porto+Velho+-+RO" class="btn btn-contact" target="_blank" rel="noopener">
+                    <i class="fas fa-map-marker-alt"></i> Ver no Mapa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Autoescola Atual</h4>
+                    <p>Sua melhor opção para habilitação em Porto Velho. Instrutores qualificados, ensino de qualidade e acolhimento inclusivo.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegação Rápida</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#instrutores">Instrutores</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (69) 99342-7318</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Amazonas, 3926</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 08h-19h</li>
+                        <li><i class="fas fa-heart"></i> Acolhimento LGBTQ+</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Autoescola Atual. Todos os direitos reservados. | Habilitação em Porto Velho</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/5569993427318" class="whatsapp-btn-fixed" title="Conversar no WhatsApp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-header');
+            header.addEventListener('click', () => {
+                item.classList.toggle('active');
+                faqItems.forEach(other => {
+                    if (other !== item) other.classList.remove('active');
+                });
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
